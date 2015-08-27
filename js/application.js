@@ -20,7 +20,7 @@ $(document).ready(function(){
     });
 
     newGame();  
-
+  /*--- updates attempt# + guess# & resets guess field & appends guess to div ---*/
     $('#guessButton').click(function(){
       var guess = $('#userGuess').val();
       console.log(typeof guess);
@@ -53,7 +53,7 @@ var newGame = function(){
 /*--- supplies the secret number ---*/
 var secretNum = function(){
   num = Math.floor((Math.random() * 100) + 1);
-  console.log("Secret number: " + num);
+  console.log("Secret Number: " + num);
   return num
 };
 
@@ -89,7 +89,7 @@ var compare = function(input, secNum){
 // you will need to write code that ensures that the 
 // user has supplied a numeric input between 1 and 100.
 
-
+// how to submit guess via the 'enter' keystroke
 
 
 
